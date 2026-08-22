@@ -1,0 +1,73 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #070C18;
+    --text-main: #F1F5F9;
+  }
+
+  body {
+    background-color: #070C18;
+    color: #F1F5F9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Landmark HUD animation */
+@keyframes landmarkPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.landmark-dot {
+  animation: landmarkPulse 1.8s ease-in-out infinite;
+}
+
+/* Clinical High-Contrast Mode */
+.theme-contrast {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+}
+.theme-contrast * {
+  border-color: #FFFF00 !important;
+}
+.theme-contrast button {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+  border: 2px solid #FFFF00 !important;
+}
+.theme-contrast button:hover {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
+}
+
+/* Clinical Crisp Light Mode */
+.theme-clinical {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
