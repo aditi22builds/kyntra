@@ -3,13 +3,22 @@
 > **Tagline:** *Technology that understands.*  
 > **Secondary Positioning:** *We don't just translate signs. We help people be understood.*
 
-KYNTRA is an AI-assisted accessibility communication platform designed primarily for Indian Sign Language (ISL) users who need to communicate with hearing people (doctors, triage nurses, emergency responders, desk staff) who do not know ISL.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Open_KYNTRA-3B82F6?style=for-the-badge)](https://aditi22builds.github.io/kyntra/)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aditi22builds/kyntra)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Active-emerald?style=for-the-badge&logo=github)](https://aditi22builds.github.io/kyntra/)
+
+---
+
+## 🌐 1-Click Live App Links
+
+- **🚀 Live Web App (GitHub Pages):** **[https://aditi22builds.github.io/kyntra/](https://aditi22builds.github.io/kyntra/)**
+- **▲ 1-Click Vercel Deployment:** Click the **Deploy with Vercel** button above or import repository `aditi22builds/kyntra` on [Vercel](https://vercel.com/new) to get a custom `https://kyntra.vercel.app` URL.
 
 ---
 
 ## 1. Overview & Problem
 
-People who communicate through ISL face acute communication barriers when interacting with people who do not know ISL—especially in emergency and healthcare settings where time, precision, and privacy are critical.
+People who communicate through Indian Sign Language (ISL) face acute communication barriers when interacting with people who do not know ISL—especially in emergency and healthcare settings where time, precision, and privacy are critical.
 
 In life-threatening situations (falls, cardiac events, trauma, acute distress), Deaf users often have to resort to writing on scraps of paper, relying on family members, or waiting anxiously for an interpreter. Simple direct translators often produce fragmented text (e.g. *"My wife fell"*), which lacks the critical medical context clinicians need to act safely.
 
@@ -56,7 +65,7 @@ KYNTRA is not built to replace human interpreters. It automates supported routin
 ## 4. MVP Features
 
 - **High-Stress Emergency Mode:** Clean, large-button layout designed to be operated under physical or psychological stress with no login friction.
-- **Live Camera Viewport & HUD:** Real-time webcam stream with signing space bounding frame and 42 3D landmark tracker overlay.
+- **Live Camera Viewport & HUD:** Real-time webcam stream with signing space bounding frame and 42 3D landmark tracking overlay (`GestureVisualizer`).
 - **Controlled Prototype Recognition Engine (`ISLRecognitionService`):** Controlled vocabulary and scenario runner for predictable, reliable pitch demonstrations.
 - **Structured Emergency Communication Card:** Dynamic clinical summary (Person, Incident, Consciousness, Symptoms, Injuries, Allergies, Known Conditions, Immediate Request) with 1-click **Show to Doctor** (Fullscreen Clinical Flashcard) and **Play Aloud** (Text-to-Speech).
 - **Two-Way Hearing Bridge:** Web Speech API integration allowing hearing doctors to speak into their microphone and display giant high-contrast captions for the ISL user.
@@ -81,7 +90,8 @@ KYNTRA is not built to replace human interpreters. It automates supported routin
 ## 6. Local Setup Instructions
 
 ```bash
-# 1. Clone or navigate to the project directory
+# 1. Clone the repository
+git clone https://github.com/aditi22builds/kyntra.git
 cd kyntra
 
 # 2. Install dependencies
